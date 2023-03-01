@@ -17,7 +17,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="debu">
     <header id="app_header">
         <nav class="navbar navbar-dark fixed-top bg-light">
             <div class="container-fluid">
@@ -27,15 +27,14 @@
                 <form class="d-flex flex-grow-1" role="search">
                     <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Search">
-                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
                 </form>
-                <button class="btn btn-light" type="button" aria-expanded="false">
-                    <i class="fa-solid fa-list"></i>
+                <button class="btn btn-light d-none d-lg-flex" type= "button" aria-expanded="false">
+                    <i class="fa-solid fa-list "></i>
                 </button>
-                <button class="btn btn-light" type="button" aria-expanded="false">
+                <button class="btn btn-light d-none d-lg-flex" type="button" aria-expanded="false">
                     <i class="fa-solid fa-circle-question"></i>
                 </button>
-                <button class="btn btn-light" type="button" aria-expanded="false">
+                <button class="btn btn-light d-none d-lg-flex" type="button" aria-expanded="false">
                     <i class="fa-solid fa-ellipsis-vertical"></i></i>
                 </button>
                 <div class=" dropdown">
@@ -53,11 +52,16 @@
                     </ul>
                 </div>
             </div>
-
         </nav>
     </header>
-    <main id="app_main">
+    <div id="my_wrapper">
+        <main id="app_main">
+            <div class="my_banner">
+               <p class="text-black">ciao-ciao</p>
+            </div>
+            <div id="my_sidebar">
 
-    </main>
-
+            </div>
+        </main>
+    </div>
 </html>
