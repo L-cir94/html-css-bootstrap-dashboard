@@ -39,7 +39,7 @@
         <button class="btn btn-light d-none d-lg-flex" type="button" aria-expanded="false">
           <i class="fa-solid fa-ellipsis-vertical"></i></i>
         </button>
-        <div class="dropdown">
+        <div class="dropdown-menu-end">
           <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-bell text-warning"></i>
           </button>
@@ -58,34 +58,89 @@
   </header>
   <div class="wrapper d-flex">
     <div class="sidebar text-white">
-      <div class="container">
-        <div class="row">
-          <div class="sidebar-top">
-            <div class="ico mt-4 d-flex justify-content-center align-items-baseline">
+      <div class="container d-flex ">
+        <div class="row justify-content-between">
+          <div class="sidebar_top">
+            <div class="ico mt-5 d-flex justify-content-lg-around justify-content-sm-center align-items-baseline">
               <i class="fa-solid fa-house"></i>
               <p class=" ms-1 d-none d-lg-flex">Home</p>
             </div>
-            <div class="ico mt-sm-3 mt-lg-1 d-flex justify-content-center align-items-baseline">
-              <i class="fa-solid fa-house"></i>
-              <p class="ms-1 d-none d-lg-flex">Home</p>
+            <div
+              class="ico mt-3 mt-lg-1 d-flex justify-content-lg-around justify-content-sm-center ms-0 align-items-baseline">
+              <i class="fa-solid fa-chart-simple fa-fw me-3"></i>
+              <p class="ms-1 d-none d-lg-flex">Stats</p>
             </div>
-            <div class="ico mt-sm-3 mt-lg-1 d-flex justify-content-center align-items-baseline">
-              <i class="fa-solid fa-house"></i>
-              <p class="ms-1 d-none d-lg-flex">Home</p>
+            <div
+              class="ico mt-3 mt-lg-1 d-flex justify-content-lg-around justify-content-sm-center  align-items-baseline">
+              <i class="fa-solid fa-signal fa-fw me-2"></i>
+              <p class="ms-1 d-none d-lg-flex">Signals</p>
             </div>
           </div>
-          <div class=" mt-5 sidebar-bottom">
-            <div class="ico mt-sm-3 mt-lg-1 d-flex justify-content-center align-items-baseline">
-              <i class="fa-solid fa-gear"></i>
+          <div class="sidebar_bottom">
+            <div
+              class="ico mt-3 mt-lg-1 d-flex justify-content-lg-around justify-content-sm-center align-items-baseline">
+              <i class="fa-solid fa-gear fa-fw"></i>
               <p class="ms-1 d-none d-lg-flex">Admin</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <main>
-      <div class="banner d-flex">
-
+      <div
+        class="banner d-flex align-items-center justify-content-between flex-row-reverse pe-5 ps-5 bg-info text-white">
+        <div class="new_student d-flex align-items-center">
+          <p class="mb-0 me-2">
+            Nuovo studente
+          </p>
+          <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
+          <div class="offcanvas offcanvas-end text-black" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+          </div>
+        </div>
+        <div class="new_student d-flex align-items-center">
+          <p class="mb-0 me-2">
+            Nuovo studente
+          </p>
+          <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
+          <div class="offcanvas offcanvas-end text-black" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+          </div>
+        </div>
+        <div class="new_student d-flex align-items-center">
+          <p class="mb-0 me-2">
+            Nuovo studente
+          </p>
+          <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
+          <div class="offcanvas offcanvas-end text-black" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="container-fluid">
         <div class="row">
@@ -107,46 +162,116 @@
                   </thead>
                   <tbody class="text-center">
                     <tr>
-                      <th class="text-start">Classe 75</th>
+                      <th class="text-start pe-lg-5">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
                       <td>15 febbraio 2021</td>
                       <td>20%</td>
-                      <td>qui sticker</td>
-                      <td>qui bottoni</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
                     </tr>
                     <tr>
-                      <th class="text-start">Classe 75</th>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
                       <td>15 febbraio 2021</td>
                       <td>20%</td>
-                      <td>qui sticker</td>
-                      <td>qui bottoni</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
                     </tr>
                     <tr>
-                      <th class="text-start">Classe 75</th>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
                       <td>15 febbraio 2021</td>
                       <td>20%</td>
-                      <td>qui sticker</td>
-                      <td>qui bottoni</td>
+                      <td><span class="badge text-bg-warning text-white">Process</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
                     </tr>
                     <tr>
-                      <th class="text-start">Classe 75</th>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
                       <td>15 febbraio 2021</td>
                       <td>20%</td>
-                      <td>qui sticker</td>
-                      <td>qui bottoni</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
                     </tr>
                     <tr>
-                      <th class="text-start">Classe 75</th>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
                       <td>15 febbraio 2021</td>
                       <td>20%</td>
-                      <td>qui sticker</td>
-                      <td>qui bottoni</td>
+                      <td><span class="badge text-bg-danger">Failed</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
                     </tr>
                     <tr>
-                      <th class="text-start">Classe 75</th>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
                       <td>15 febbraio 2021</td>
                       <td>20%</td>
-                      <td>qui sticker</td>
-                      <td>qui bottoni</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
+                      <td>15 febbraio 2021</td>
+                      <td>20%</td>
+                      <td><span class="badge text-bg-danger">Failed</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-start">
+                        <i class="fa-solid fa-code bg-danger text-white p-1 rounded-5"></i>
+                        Classe 75
+                      </th>
+                      <td>15 febbraio 2021</td>
+                      <td>20%</td>
+                      <td><span class="badge text-bg-success">Done</span></td>
+                      <td class="d-flex">
+                        <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pencil"></i></button>
+                        <button type="button" class="btn btn-outline-dark"><i
+                            class="fa-solid fa-trash-can"></i></button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

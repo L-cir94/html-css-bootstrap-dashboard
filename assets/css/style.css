@@ -42,7 +42,6 @@ main {
     overflow-y: auto;
 }
 .banner{
-    background-color: aqua;/* usa i colori di boot */
     height: 6rem;
 }
 img{
@@ -60,5 +59,7 @@ img{
         overflow-y: auto;
     }
 }
-
+.sidebar_bottom{
+    padding-top:27rem;
+}
 /*#endregion mediaquery */
