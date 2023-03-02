@@ -45,7 +45,9 @@ main {
     background-color: aqua;/* usa i colori di boot */
     height: 6rem;
 }
-
+img{
+    max-width: 100%;
+}
 
 /*#region mediaquery */
 @media screen and (min-width:992px) {
