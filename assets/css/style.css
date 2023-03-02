@@ -1,26 +1,62 @@
-.debug #app_header {
-    background-color: aquamarine;
+.debug header {
+    height: 50px;
+    background-color: red;
+}
+
+.debug .wrapper {
+    background-color: rgb(243, 243, 95);
+}
+
+.debug .sidebar {
+    background-color: rgb(0, 0, 0);
+}
+
+.debug .banner {
+    background-color: rgb(20, 203, 220);
+    height: 100px;
+}
+
+.debug [class^="col-"] {
+    background-color: darkorange;
+    min-height: 50px;
+
+}
+
+#app_header {
     height: 50px;
 }
 
-.debug #my_wrapper {
-    width: 100%;
-    background-color: rgb(248, 248, 81);
-}
-
-.debug #app_main {
-    background-color: rgb(206, 255, 255);
+.wrapper {
+    height: calc(100vh - 50px);
 
 }
 
-.debug #my_sidebar {
-    width: 30px;
-    height: 600px;
+.sidebar {
     background-color: black;
-    overflow-y: hidden;
+    width: 4rem;
+    overflow: hidden;
 }
-.my_banner{
-    background-color: rgb(163, 127, 255);
-    height: 200px;
-    width: 100%;
+
+main {
+    width: calc(100% - 4rem);
+    overflow-y: auto;
 }
+.banner{
+    background-color: aqua;/* usa i colori di boot */
+    height: 6rem;
+}
+
+
+/*#region mediaquery */
+@media screen and (min-width:992px) {
+    .sidebar {
+        width: 8rem;
+    }
+
+    main {
+        width: calc(100% - 8rem);
+        overflow-y: auto;
+    }
+}
+
+/*#endregion mediaquery */
