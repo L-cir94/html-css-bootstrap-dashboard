@@ -17,12 +17,13 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
-<body class="debu">
+<body class="debug">
     <header id="app_header">
         <nav class="navbar navbar-dark fixed-top bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex flex-grow-2" href="#">
-                    <img src="./assets/img/logo.svg" alt="Logo" class="d-flex justify-content-start">
+                    <img  src="./assets/img/logo.svg" alt="Logo" class="d-none d-lg-flex justify-content-start">
+                    <img src="./assets/img/mobile-logo.png" width="40px" alt="Logo-mobile" class="d-flex d-lg-none justify-content-start rounded-5">
                 </a>
                 <form class="d-flex flex-grow-1" role="search">
                     <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
@@ -55,10 +56,11 @@
         </nav>
     </header>
     <div id="my_wrapper">
-        <main id="app_main">
+        <main id="d-flex app_main">
             <div class="my_banner">
-               <p class="text-black">ciao-ciao</p>
+
             </div>
+            
             <div id="my_sidebar">
 
             </div>
