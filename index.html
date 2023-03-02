@@ -39,11 +39,11 @@
         <button class="btn btn-light d-none d-lg-flex" type="button" aria-expanded="false">
           <i class="fa-solid fa-ellipsis-vertical"></i></i>
         </button>
-        <div class="dropdown ">
+        <div class="dropdown">
           <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-bell text-warning"></i>
           </button>
-          <ul class="dropdown-menu dropdown-menu-light">
+          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-light">
             <li><a class="dropdown-item active" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -88,21 +88,15 @@
       </div>
     </div>
     <main>
-      <div class="banner d-flex align-items-center justify-content-between flex-row pe-5 ps-5 bg-info text-white">
+      <div class="banner d-flex align-items-center justify-content-between flex-row pe-5 ps-5 bg-primary text-white">
         <div class="new_student d-flex align-items-center">
-          <div class="row">
+          <div class="row d-flex">
+            <span class="badge text-bg-secondary rounded-5 text-white">Process</span>
             <h4 class="mb-0 me-2">
               Boolean
             </h4>
-            <span class="badge text-bg-secondary rounded-5 text-white">Process</span>
+            
           </div>
-          <div class="row">
-            <h4 class="mb-0 me-2">
-              Boolean
-            </h4>
-            <span class="badge text-bg-secondary rounded-5 text-white">Process</span>
-          </div>
-
         </div>
         <div class="new_student d-flex align-items-center">
           <p class="mb-0 me-2">
@@ -110,14 +104,83 @@
           </p>
           <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
-          <div class="offcanvas offcanvas-end text-black" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+          <div class="offcanvas
+         offcanvas-end text-black" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <p>Try scrolling the rest of the page to see this option in action.</p>
+              <form class="row">
+                <div class="col-md-6">
+                  <label for="student_name" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="student_name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="student_surname" class="form-label">Cognome</label>
+                  <input type="text" class="form-control" id="student_surname" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="student_email" class="form-label">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text px-2 search_bg" id="student_email_icon">
+                      <i class="fa-solid fa-at fa-fw"></i>
+                    </span>
+                    <input type="email" class="form-control" id="student_email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="student_password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="student_password" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="student_confirm_email" class="form-label">Conferma Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text px-2 search_bg" id="student_confirm_email_icon">
+                      <i class="fa-solid fa-at fa-fw"></i>
+                    </span>
+                    <input type="email" class="form-control" id="student_confirm_email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="student_confirm_password" class="form-label">Conferma Password</label>
+                  <input type="password" class="form-control" id="student_confirm_password" required>
+                </div>
+                <div class="col-12">
+                  <label for="student_address" class="form-label">Indirizzo</label>
+                  <input type="text" class="form-control" id="student_address" required>
+                </div>
+                <div class="col-md-5">
+                  <label for="student_city" class="form-label">Citta</label>
+                  <input type="text" class="form-control" id="student_city" required>
+                </div>
+                <div class="col-md-5">
+                  <label for="student_country" class="form-label">Stato</label>
+                  <select id="student_country" class="form-select" required>
+                    <option value="" selected>Scegli...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="student_zip" class="form-label">CAP</label>
+                  <input type="text" class="form-control" id="student_zip" required>
+                </div>
+                <div class="col-12">
+                  <label for="student_photo" class="form-label">Foto</label>
+                  <input type="file" class="form-control" id="student_photo" required>
+                </div>
+                <div class="col-12">
+                  <div class="form-check mt-2 mb-2">
+                    <input class="form-check-input" type="checkbox" id="student_form_check" required>
+                    <label class="form-check-label" for="student_form_check">
+                      Seleziona per proseguire
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary me-2">Salva</button>
+                  <button type="reset" class="btn btn-warning">Svuota</button>
+                </div>
             </div>
           </div>
         </div>
